@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     const int R = std::atoi(argv[4]);
 
     KnapsackGenerator gen(seed);
-    std::cout << R << '\n';
+    // std::cout << R << '\n';
     for (int r = 0; r < R; ++r) {
         const KnapsackInstance d = gen.random(n, W);
         std::cout << d.n << ' ' << d.W << '\n';
