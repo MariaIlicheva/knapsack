@@ -21,4 +21,4 @@ gen: gen.cpp knapsack_generator.h
 clean:
 	rm -f knapsack tests experiment
 
-.PHONY: all check clean
+.PHONY: all check clean gen
