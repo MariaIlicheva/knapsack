@@ -15,6 +15,9 @@ experiment: experiment.cpp knapsack.hpp knapsack_generator.h
 check: tests
 	./tests
 
+gen: gen.cpp knapsack_generator.h
+   	$(CXX) $(CXXFLAGS) gen.cpp -o $@
+
 clean:
 	rm -f knapsack tests experiment
 
